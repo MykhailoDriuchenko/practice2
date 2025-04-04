@@ -1,0 +1,274 @@
+/* Tomato Products Page Styles */
+
+/* Tomato Hero Section */
+.tomato-hero {
+    background-image: url('lemons.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: relative;
+}
+.tomato-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.tomato-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.tomato-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+    width: 70px;
+    height: 3px;
+    background-color: #4a8522;
+    margin: 20px auto;
+}
+
+/* Tomato Description Section */
+.tomato-description {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.tomato-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tomato-highlight {
+    background-color: #fef5f5;
+    border-left: 4px solid #a52222;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.tomato-highlight p {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Tomato Categories Section */
+.tomato-categories {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.category-box {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 5px;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-box h3 {
+    color: #4a8522;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.category-box p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Tomato Products Gallery */
+.tomato-products {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.tomato-products h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* New Tomato Gallery Styling Based on Example */
+.tomatosList {
+    margin-top: 30px;
+}
+
+.tomatoItem {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.tomatoItem a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.tomatoImg {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tomatoImg img {
+    max-width: 100%;
+    max-height: 230px;
+    object-fit: contain;
+}
+
+.tomatoInfo {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+}
+
+.tomatoInfo b {
+    color: #4a8522;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Cart Buttons Styling */
+.cart-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.pdf {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a8522;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.pdf:hover {
+    background-color: #3a6a1a;
+    color: white;
+}
+
+/* Active navigation link */
+.main-nav a.active {
+    color: #4a8522;
+    font-weight: 600;
+}
+
+/* Tomato Header - make it darker for better contrast */
+.tomato-header {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .tomato-hero {
+        height: 40vh;
+    }
+    
+    .tomato-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tomato-description {
+        padding: 40px 15px;
+    }
+    
+    .tomato-categories {
+        padding: 40px 15px;
+    }
+    
+    .category-box {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .tomato-products {
+        padding: 40px 15px;
+    }
+    
+    .tomato-products h2 {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+    
+    .tomatoImg {
+        height: 200px;
+    }
+    
+    .tomatoInfo {
+        min-height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tomato-hero {
+        height: 35vh;
+    }
+    
+    .tomato-hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .tomato-description p,
+    .tomato-highlight p {
+        font-size: 0.9rem;
+    }
+    
+    .category-box h3 {
+        font-size: 1.2rem;
+    }
+    
+    .category-box p {
+        font-size: 0.85rem;
+    }
+    
+    .tomatoImg {
+        height: 180px;
+    }
+    
+    .tomatoInfo b {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+}
